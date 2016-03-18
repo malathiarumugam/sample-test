@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Bye]">
+  <parameter name="url" value="bluemeric/helloworld1"/>
+  <parameter name="endpoint" value="localhost"/>
+  <test name="HelloWorld110(failed)" preserve-order="true">
+    <parameter name="endpoint" value="localhost"/>
+    <parameter name="url" value="bluemeric/helloworld10"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="get" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- HelloWorld110(failed) -->
+  <test name="HelloWorld11(failed)" preserve-order="true">
+    <parameter name="endpoint" value="localhost"/>
+    <parameter name="url" value="bluemeric/helloworld1111"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="get" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- HelloWorld11(failed) -->
+  <test name="HelloWorld13(failed)" preserve-order="true">
+    <parameter name="endpoint" value="localhost"/>
+    <parameter name="url" value="bluemeric/helloworld3"/>
+    <groups>
+      <run>
+        <include name="get"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.bluemeric.test.GenerateTest">
+        <methods>
+          <include name="get" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </classes>
+  </test> <!-- HelloWorld13(failed) -->
+</suite> <!-- Failed suite [Bye] -->

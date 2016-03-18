@@ -1,0 +1,112 @@
+<project name="bluemeric" default="dist" basedir=".">
+	<description>bluemeric test suite build</description>
+
+	<!-- set global properties for this build -->
+
+	<property name="src" location="src" />
+	<property name="build" location="bluemericTestFramework/WEB-INF/classes" />
+	<property name="dist" location="dist" />
+	<property name="config" location="config" />
+	<property name="suite" location="suite" />
+	<property name="libs" location="jar_files" />
+	<property environment="env" />
+
+	<!-- Directory name where the TestNG report will be saved. -->
+	<property name="testng.output.dir" value="testng_output" />
+	<!--<property name="tomcat-manager-url" location="http://localhost:8080" 
+		/> -->
+	<property name="tomcat-manager-username" location="" />
+	<property name="tomcat-manager-password" location="" />
+	<property name="war-file-name" value="bluemericTestFramework.war" />
+	<property name="source-directory" value="src" />
+	<property name="classes-directory" value="bin" />
+	<property name="web-directory" value="bluemericTestFramework" />
+	<property name="web-xml-file" value="bluemericTestFramework/WEB-INF/web.xml" />
+
+	<tstamp prefix="build-info">
+		<format property="current-date" pattern="d-MMMM-yyyy" locale="en" />
+		<format property="current-time" pattern="hh:mm:ss a z" locale="en" />
+		<format property="year-month-day" pattern="yyyy-MM-dd" locale="en" />
+	</tstamp>
+
+
+	<path id="classes">
+		<pathelement path="${classpath}" />
+		<pathelement location="${build}" />
+		<fileset dir="jar_files">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="init">
+		<echo message="${tomcat-manager-url}" />
+		<echo message="${env.CATALINA_HOME}" />
+		<!-- Create the time stamp -->
+		<tstamp />
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}" />
+	</target>
+
+	<target name="compile" depends="init" description="compile the source ">
+		<!-- Compile the java code from ${src} into ${build} -->
+
+
+		<javac srcdir="${src}" destdir="${build}" classpathref="classes">
+			<include name="com/bluemeric/resource/*.java" />
+			<include name="com/bluemeric/commons/*.java" />
+			<include name="com/bluemeric/utils/*.java" />
+			<include name="com/bluemeric/httpConnection/*.java" />
+			<include name="com/bluemeric/test/*.java" />
+		</javac>
+
+	</target>
+
+	<target name="dist" depends="compile" description="generate the distribution">
+		<!-- Create the distribution directory -->
+		<mkdir dir="${dist}/lib" />
+
+		<!-- Put everything in ${build} into the bluemeric-${DSTAMP}.jar file -->
+		<jar jarfile="${dist}/lib/bluemeric-${DSTAMP}.jar" basedir="${build}" />
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${build} , ${dist} and ${testng.output.dir} directory trees -->
+		<delete dir="${build}" />
+		<delete dir="${dist}" />
+		<delete dir="${testng.output.dir}" />
+	</target>
+	<target name="jar">
+		<jar destfile="${build}/${ant.project.name}.jar" basedir="${build}">
+			<manifest>
+				<attribute name="Main-Class" value="com.bluemeric.acl.suite.RunAclTest" />
+			</manifest>
+		</jar>
+	</target>
+
+	<!-- Define <testng> task -->
+	<taskdef name="testng" classname="org.testng.TestNGAntTask">
+		<classpath>
+			<pathelement location="jar_files/testng-6.5.1.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="runTest">
+		<java classname="com.bluemeric.test.RunTest" fork="true">
+			<sysproperty key="PROJECT_HOME" value="${PROJECT_HOME}" />
+
+			<classpath>
+				<pathelement location="${build}" />
+				<path refid="classes" />
+			</classpath>
+		</java>
+	</target>
+
+	<target name="war" depends="compile">
+		<war destfile="${env.CATALINA_HOME}/webapps/bluemericTestFramework.war"
+			webxml="bluemericTestFramework/WEB-INF/web.xml">
+			<fileset dir="bluemericTestFramework" />
+			<classes dir="${build}" />
+		</war>
+	</target>
+
+</project>

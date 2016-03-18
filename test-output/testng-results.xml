@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="5" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[
+
+Get path : http://localhost:8080/sampleapp/bluemeric/helloworld]]>
+    </line>
+    <line>
+      <![CDATA[
+ Status code received : 200]]>
+    </line>
+    <line>
+      <![CDATA[
+Resonse : Hello World]]>
+    </line>
+    <line>
+      <![CDATA[
+
+Get path : http://localhost:8080/sampleapp/bluemeric/helloworld0]]>
+    </line>
+    <line>
+      <![CDATA[
+ Status code received : 200]]>
+    </line>
+    <line>
+      <![CDATA[
+Resonse : <?xml version="1.0"?><hello> Hello World</hello>]]>
+    </line>
+    <line>
+      <![CDATA[
+
+Get path : http://localhost:8080/sampleapp/bluemeric/helloworld1]]>
+    </line>
+    <line>
+      <![CDATA[
+ Status code received : 200]]>
+    </line>
+    <line>
+      <![CDATA[
+Resonse : <?xml version="1.0"?><hello> Hello World vidhya</hello>]]>
+    </line>
+    <line>
+      <![CDATA[
+
+Get path : http://localhost:8080/sampleapp/bluemeric/helloworld2]]>
+    </line>
+    <line>
+      <![CDATA[
+ Status code received : 200]]>
+    </line>
+    <line>
+      <![CDATA[
+Resonse : <html> <title>Hello World</title><body><h1>Hello World</body></h1></html> ]]>
+    </line>
+    <line>
+      <![CDATA[
+
+Get path : http://localhost:8080/sampleapp/bluemeric/helloworld3]]>
+    </line>
+    <line>
+      <![CDATA[
+ Status code received : 404]]>
+    </line>
+    <line>
+      <![CDATA[
+Resonse : <html><head><title>Apache Tomcat/7.0.12 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - Not Found</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>Not Found</u></p><p><b>description</b> <u>The requested resource (Not Found) is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.12</h3></body></html>]]>
+    </line>
+  </reporter-output>
+  <suite name="HelloWorld" duration-ms="178" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+    <groups>
+      <group name="get">
+        <method signature="GenerateTest.getTest(java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@632e77]" name="getTest" class="com.bluemeric.test.GenerateTest"/>
+        <method signature="GenerateTest.getTest(java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@1f68572]" name="getTest" class="com.bluemeric.test.GenerateTest"/>
+        <method signature="GenerateTest.getTest(java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@32a615]" name="getTest" class="com.bluemeric.test.GenerateTest"/>
+        <method signature="GenerateTest.getTest(java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@14a51f0]" name="getTest" class="com.bluemeric.test.GenerateTest"/>
+        <method signature="GenerateTest.getTest(java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@52438]" name="getTest" class="com.bluemeric.test.GenerateTest"/>
+      </group> <!-- get -->
+    </groups>
+    <test name="HelloWorld" duration-ms="99" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+      <class name="com.bluemeric.test.GenerateTest">
+        <test-method status="PASS" signature="getTest(java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@632e77]" name="getTest" duration-ms="84" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bluemeric/helloworld]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- getTest -->
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </test> <!-- HelloWorld -->
+    <test name="HelloWorld0" duration-ms="5" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+      <class name="com.bluemeric.test.GenerateTest">
+        <test-method status="PASS" signature="getTest(java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@1f68572]" name="getTest" duration-ms="4" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bluemeric/helloworld0]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- getTest -->
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </test> <!-- HelloWorld0 -->
+    <test name="HelloWorld1" duration-ms="10" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+      <class name="com.bluemeric.test.GenerateTest">
+        <test-method status="PASS" signature="getTest(java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@32a615]" name="getTest" duration-ms="9" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bluemeric/helloworld1]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- getTest -->
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </test> <!-- HelloWorld1 -->
+    <test name="HelloWorld2" duration-ms="5" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+      <class name="com.bluemeric.test.GenerateTest">
+        <test-method status="PASS" signature="getTest(java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@14a51f0]" name="getTest" duration-ms="4" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bluemeric/helloworld2]]>
+              </value>
+            </param>
+          </params>
+        </test-method> <!-- getTest -->
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </test> <!-- HelloWorld2 -->
+    <test name="HelloWorld3" duration-ms="7" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+      <class name="com.bluemeric.test.GenerateTest">
+        <test-method status="FAIL" signature="getTest(java.lang.String, java.lang.String)[pri:0, instance:com.bluemeric.test.GenerateTest@52438]" name="getTest" duration-ms="7" started-at="2016-03-18T20:31:15Z" finished-at="2016-03-18T20:31:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bluemeric/helloworld3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected response code is 200. But got 404. Hence failed the test.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected response code is 200. But got 404. Hence failed the test.
+	at org.testng.Assert.fail(Assert.java:89)
+	at com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at com.bluemeric.test.RunTest.runTests(RunTest.java:49)
+	at com.bluemeric.test.RunTest.main(RunTest.java:85)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- getTest -->
+      </class> <!-- com.bluemeric.test.GenerateTest -->
+    </test> <!-- HelloWorld3 -->
+  </suite> <!-- HelloWorld -->
+</testng-results>
