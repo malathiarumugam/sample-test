@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  HelloWorld1</title>
+<title>TestNG:  HelloWorld4</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>HelloWorld1</h2><table border='1' align="center">
+<h2 align='center'>HelloWorld4</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
 <td>Started on:</td><td>Fri Mar 18 21:26:16 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (15 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (31 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>get </td>
 </tr><tr>
@@ -75,28 +75,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bluemeric.test.GenerateTest.getTest()'><b>getTest</b><br>Test class: com.bluemeric.test.GenerateTest<br>Parameters: localhost, bluemeric/helloworld11<br/>
-<a href="#Output-27476353" onClick='toggleBox("Output-27476353", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.bluemeric.test.GenerateTest.getTest()'><b>getTest</b><br>Test class: com.bluemeric.test.GenerateTest<br>Parameters: localhost, bluemeric/helloworld4?name=Vidhya<br/>
+<a href="#Output-29618084" onClick='toggleBox("Output-29618084", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-27476353" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-27476353">
+<a href="#Output-29618084" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29618084">
 
 
-Get path : http://localhost:8080/sampleapp/bluemeric/helloworld11<br/>
+Get path : http://localhost:8080/sampleapp/bluemeric/helloworld4?name=Vidhya<br/>
 
- Status code received : 404<br/>
+ Status code received : 200<br/>
 
-Resonse : <html><head><title>Apache Tomcat/7.0.12 - Error report</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - Not Found</h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b> <u>Not Found</u></p><p><b>description</b> <u>The requested resource (Not Found) is not available.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.12</h3></body></html><br/>
+Resonse : Hello World Testing<br/>
+
+Passed Query Parameter = Vidhya. Received Prameter = Testing<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: Expected response code is 200. But got 404. Hence failed the test.
-	at com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:59)
+<td><div><pre>java.lang.AssertionError: Passed query parameter is Vidhya. But received reponse = Testing. Parameter is mismatching. Hence failing the test.
+	at com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:56)
 	at com.bluemeric.test.RunTest.runTests(RunTest.java:49)
 	at com.bluemeric.test.RunTest.main(RunTest.java:85)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27476353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace27476353'><pre>java.lang.AssertionError: Expected response code is 200. But got 404. Hence failed the test.
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29618084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29618084'><pre>java.lang.AssertionError: Passed query parameter is Vidhya. But received reponse = Testing. Parameter is mismatching. Hence failing the test.
 	at org.testng.Assert.fail(Assert.java:89)
-	at com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:59)
+	at com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -122,7 +124,7 @@ Resonse : <html><head><title>Apache Tomcat/7.0.12 - Error report</title><style><
 	at com.bluemeric.test.RunTest.main(RunTest.java:85)
 </pre></div></td>
 <td>0</td>
-<td>com.bluemeric.test.GenerateTest@aa3152</td></tr>
+<td>com.bluemeric.test.GenerateTest@d333c7</td></tr>
 </table><p>
 </body>
 </html>

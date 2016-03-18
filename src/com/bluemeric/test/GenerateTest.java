@@ -45,6 +45,16 @@ public class GenerateTest extends TestNG {
 		Reporter.log("\n\nGet path : " + url);
 		Reporter.log("\n Status code received : " + con.statusCode);
 		Reporter.log("\nResonse : " + con.responseString);
+		
+		if(uri.contains("?")){
+			String[] param = uri.split("=");
+			String temp = con.responseString.substring(12);
+			System.out.println("param ==== " + param[1] );
+			Reporter.log("\nPassed Query Parameter = " +  param[1] + ". Received Prameter = " + temp); 
+	
+			if(!con.responseString.contains(param[1]))
+				Assert.fail("Passed query parameter is " + param[1] + ". But received reponse = " + temp + ". Parameter is mismatching. Hence failing the test.");
+		}
 		if (resCode != 200 )
 			Assert.fail("Expected response code is 200. But got " + resCode + ". Hence failed the test.");
 

@@ -8,12 +8,12 @@ public class Util {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		String[] directories = readDirectories("F:/DemoWorkspace/demotest/config");
-		for ( int dir = 0; dir < directories.length; dir++){
-		System.out.println(directories[dir].toString());
-		}	
-	}
+//	public static void main(String[] args) {
+//		String[] directories = readDirectories("F:/DemoWorkspace/demotest/config");
+//		for ( int dir = 0; dir < directories.length; dir++){
+//			System.out.println(directories[dir].toString());
+//		}	
+//	}
 
 	public static String[] readDirectories(String dir){
 		File file = new File(dir);
