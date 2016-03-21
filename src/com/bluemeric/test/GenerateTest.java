@@ -39,7 +39,7 @@ public class GenerateTest extends TestNG {
 	@Parameters({"endpoint", "url"})
 	@Test(groups = { "get" })
 	public void getTest(@Optional String endpoint, @Optional String uri) throws Exception {
-		System.out.println("======endpoint" + endpoint + "*******" + uri);
+		//System.out.println("======endpoint" + endpoint + "*******" + uri);
 		String url = "http://" + endpoint + ":8080/sampleapp/" +  uri ;
 		int resCode = con.get(url);
 		Reporter.log("\n\nGet path : " + url);

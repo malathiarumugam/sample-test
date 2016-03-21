@@ -57,7 +57,7 @@ public class RunTest  implements ITestListener {
 			Map<String, String> parameters  = new HashMap<String, String>();
 			XmlTest test = new XmlTest(suite);
 			String url = tstApp.getQueryParam()[i].getUrl();
-			System.out.println("Name **************" + tstApp.getQueryParam()[i].getName());
+			//System.out.println("Name **************" + tstApp.getQueryParam()[i].getName());
 			test.setName(tstApp.getQueryParam()[i].getName());
 
 			parameters.put("endpoint", endpoint); 
