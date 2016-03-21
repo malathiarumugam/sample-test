@@ -93,6 +93,7 @@
 	<target name="runTest">
 		<java classname="com.bluemeric.test.RunTest" fork="true">
 			<sysproperty key="PROJECT_HOME" value="${PROJECT_HOME}" />
+			<sysproperty key="APP_ENDPOINT" value="${APP_ENDPOINT}" />
 
 			<classpath>
 				<pathelement location="${build}" />
