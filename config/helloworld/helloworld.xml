@@ -2,8 +2,6 @@
 <TestApp name="HelloWorld">
 	<queryParam name="HelloWorld" url="bluemeric/helloworld" />
 	<queryParam name="HelloWorld0" url="bluemeric/helloworld0" />
-	<queryParam name="HelloWorld1" url="bluemeric/helloworld11" />
-	<queryParam name="HelloWorld2" url="bluemeric/helloworld2" />
-	<queryParam name="HelloWorld3" url="bluemeric/helloworld3?name=BluemericDemo" />
-	<queryParam name="HelloWorld4" url="bluemeric/helloworld4?name=DemoTest" />
+	<queryParam name="HelloWorld1" url="bluemeric/helloworld1" />
+	<queryParam name="HelloWorld2" url="bluemeric/helloworld2?name=Demo" />
 </TestApp>

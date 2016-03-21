@@ -22,26 +22,18 @@ public class GenerateTest extends TestNG {
 	static Logger logger = Logger.getLogger(GenerateTest.class);
 	HttpConnection con ;
 
-	//	String server ;
-	//	String path ;
-
 	public GenerateTest() throws Exception {
 		con = new HttpConnection();
 		PropertyConfigurator.configure(projectHome + "/log4j.properties");  
 	}
 
-	//	public GenerateTest(String server, String path) throws Exception{
-	//		con = new HttpConnection();
-	//		this.server = server;
-	//		this.path = path ;
-	//	}
-
 	@Parameters({"endpoint", "url"})
 	@Test(groups = { "get" })
 	public void getTest(@Optional String endpoint, @Optional String uri) throws Exception {
-		//System.out.println("======endpoint" + endpoint + "*******" + uri);
+		
 		String url = "http://" + endpoint + ":8080/sampleapp/" +  uri ;
 		int resCode = con.get(url);
+		
 		Reporter.log("\n\nGet path : " + url);
 		Reporter.log("\n Status code received : " + con.statusCode);
 		Reporter.log("\nResonse : " + con.responseString);
@@ -57,11 +49,6 @@ public class GenerateTest extends TestNG {
 		}
 		if (resCode != 200 )
 			Assert.fail("Expected response code is 200. But got " + resCode + ". Hence failed the test.");
-
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
 

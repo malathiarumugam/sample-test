@@ -19,21 +19,16 @@ public class HttpConnection {
 
 	public int get(String url) throws Exception
 	{
-		System.out.println("URL : GET " + url);
 		GetMethod gm = new GetMethod(url);  
 		statusCode = client.executeMethod(gm);
-		System.out.println(" statusCode = " + statusCode ); 
 		responseString = gm.getResponseBodyAsString();
-		System.out.println(" Response = " +  responseString); 
 		gm.releaseConnection();
+		
+		System.out.println("URL : GET " + url);
+		System.out.println(" statusCode = " + statusCode ); 
+		System.out.println(" Response = " +  responseString); 
+		
 		return statusCode;
 	}
-
-
-	//	public static void main(String[] args) throws Exception {
-	//		// TODO Auto-generated method stub
-	//		HttpConnection con = new HttpConnection();
-	//
-	//	}
 
 }

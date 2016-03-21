@@ -20,10 +20,11 @@ import com.bluemeric.common.TestApp;
 import com.bluemeric.common.Util;
 
 public class RunTest  implements ITestListener {
-	static String projectHome =  System.getProperty("PROJECT_HOME") + "/";
+	static String projectHome = System.getProperty("PROJECT_HOME") + "/";
 	static String endpoint = System.getProperty("APP_ENDPOINT"); 
 
 	List<XmlSuite> xmlSuites;
+	
 	RunTest() {
 		xmlSuites = new ArrayList<XmlSuite>();
 	}
@@ -56,12 +57,10 @@ public class RunTest  implements ITestListener {
 		for (int i = 0; i < tstApp.getQueryParam().length; i++) {
 			Map<String, String> parameters  = new HashMap<String, String>();
 			XmlTest test = new XmlTest(suite);
-			String url = tstApp.getQueryParam()[i].getUrl();
-			//System.out.println("Name **************" + tstApp.getQueryParam()[i].getName());
 			test.setName(tstApp.getQueryParam()[i].getName());
 
 			parameters.put("endpoint", endpoint); 
-			parameters.put("url", url);
+			parameters.put("url", tstApp.getQueryParam()[i].getUrl());
 			test.setParameters(parameters);
 			List<XmlClass> classes = new ArrayList<XmlClass>();
 
@@ -125,8 +124,5 @@ public class RunTest  implements ITestListener {
 	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-
 	}
-
-
 }
