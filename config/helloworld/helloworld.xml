@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestApp name="HelloWorld">
 	<queryParam name="HelloWorld" url="bluemeric/helloworld" />
-	<queryParam name="HelloWorld0" url="bluemeric/helloworld10" />
+	<queryParam name="HelloWorld0" url="bluemeric/helloworld0" />
 	<queryParam name="HelloWorld1" url="bluemeric/helloworld1" />
 	<queryParam name="HelloWorld2" url="bluemeric/helloworld2?name=Demo" />
 </TestApp>
