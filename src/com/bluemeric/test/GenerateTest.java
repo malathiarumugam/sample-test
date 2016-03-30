@@ -35,8 +35,8 @@ public class GenerateTest extends TestNG {
 		int resCode = con.get(url);
 		
 		Reporter.log("\n\nGet path : " + url);
-		Reporter.log("\n Status code received : " + con.statusCode);
-		Reporter.log("\nResonse : " + con.responseString);
+		Reporter.log("\n Response code received : " + con.statusCode);
+		Reporter.log("\nResponse String received : " + con.responseString);
 		
 		if(uri.contains("?")){
 			String[] param = uri.split("=");
