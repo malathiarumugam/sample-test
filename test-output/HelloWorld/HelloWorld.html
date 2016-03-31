@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>HelloWorld</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 21 21:16:09 IST 2016</td>
+<td>Started on:</td><td>Thu Mar 31 07:31:48 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (104 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (110 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>get </td>
 </tr><tr>
@@ -67,31 +67,62 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bluemeric.test.GenerateTest.getTest()'><b>getTest</b><br>Test class: com.bluemeric.test.GenerateTest<br>Parameters: localhost, bluemeric/helloworld<br/>
-<a href="#Output-29580184" onClick='toggleBox("Output-29580184", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.bluemeric.test.GenerateTest.getTest()'><b>getTest</b><br>Test class: com.bluemeric.test.GenerateTest<br>Parameters: localhost, bluemeric/helloworld, helloworld.txt, helloworld<br/>
+<a href="#Output-9652295" onClick='toggleBox("Output-9652295", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-29580184" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-29580184">
+<a href="#Output-9652295" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9652295">
 
 
 Get path : http://localhost:8080/sampleapp/bluemeric/helloworld<br/>
 
- Status code received : 200<br/>
+ Response code received : 200<br/>
 
-Resonse : Hello World<br/>
+Response String received : Hello World1<br/>
 </div>
 </td>
-<td></td>
+<td><div><pre>java.lang.AssertionError: Expected response is Hello World. But received reponse = Hello World1. Output mismatching. Hence failing the test.
+	at com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:53)
+	at com.bluemeric.test.RunTest.runTests(RunTest.java:50)
+	at com.bluemeric.test.RunTest.main(RunTest.java:86)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace9652295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace9652295'><pre>java.lang.AssertionError: Expected response is Hello World. But received reponse = Hello World1. Output mismatching. Hence failing the test.
+	at org.testng.Assert.fail(Assert.java:89)
+	at com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:702)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:768)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1113)
+	at org.testng.TestNG.run(TestNG.java:1025)
+	at com.bluemeric.test.RunTest.runTests(RunTest.java:50)
+	at com.bluemeric.test.RunTest.main(RunTest.java:86)
+</pre></div></td>
 <td>0</td>
-<td>com.bluemeric.test.GenerateTest@aee53f</td></tr>
+<td>com.bluemeric.test.GenerateTest@6ef76f</td></tr>
 </table><p>
 </body>
 </html>

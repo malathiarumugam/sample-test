@@ -37,6 +37,7 @@ public class TestApp extends GenericClass {
 
 		private String url;
 		private String name;
+		private String outputFile;
 
 		@XmlAttribute
 		public String getUrl() {
@@ -56,9 +57,19 @@ public class TestApp extends GenericClass {
 			this.name = name;
 		}
 
+		@XmlAttribute
+		public String getOutputFile() {
+			return outputFile;
+		}
+
+		public void setOutputFile(String outputFile) {
+			this.outputFile = outputFile;
+		}
+
 		@Override
 		public String toString() {
-			return "QueryParam [url=" + url + ", name=" + name + "]";
+			return "QueryParam [url=" + url + ", name=" + name
+					+ ", outputFile=" + outputFile + "]";
 		}
 
 	}

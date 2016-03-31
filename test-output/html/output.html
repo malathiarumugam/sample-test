@@ -19,32 +19,27 @@
 <br/>
 Get path : http://localhost:8080/sampleapp/bluemeric/helloworld<br />
                         <br/>
- Status code received : 200<br />
+ Response code received : 200<br />
                         <br/>
-Resonse : Hello World<br />
-                        <br/>
-<br/>
-Get path : http://localhost:8080/sampleapp/bluemeric/helloworld0<br />
-                        <br/>
- Status code received : 200<br />
-                        <br/>
-Resonse : &lt;?xml version=&quot;1.0&quot;?&gt;&lt;hello&gt; Hello World&lt;/hello&gt;<br />
+Response String received : Hello World1<br />
                         <br/>
 <br/>
-Get path : http://localhost:8080/sampleapp/bluemeric/helloworld1<br />
+Get path : http://localhost:8080/sampleapp/bluemeric/helloworld1?name=testing<br />
                         <br/>
- Status code received : 200<br />
+ Response code received : 200<br />
                         <br/>
-Resonse : &lt;html&gt; &lt;title&gt;Hello World&lt;/title&gt;&lt;body&gt;&lt;h1&gt;Hello World! Welcome to Bluemeric Demo!&lt;/body&gt;&lt;/h1&gt;&lt;/html&gt; <br />
+Response String received : Hello World testing<br />
+                        <br/>
+Both response code and string are matching with expected output. Hence Passed the test.<br />
                         <br/>
 <br/>
-Get path : http://localhost:8080/sampleapp/bluemeric/helloworld2?name=Demo<br />
+Get path : http://localhost:8080/sampleapp/bluemeric/welcome<br />
                         <br/>
- Status code received : 200<br />
+ Response code received : 200<br />
                         <br/>
-Resonse : Hello World Demo<br />
+Response String received : Welcome to Bluemeric.<br />
                         <br/>
-Passed Query Parameter = Demo. Received Prameter = Demo<br />
+Both response code and string are matching with expected output. Hence Passed the test.<br />
             </div>
 
 </body>

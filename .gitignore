@@ -1,0 +1,12 @@
+*.log
+*.log.*
+
+*.class
+
+# Intellij IDEA files
+*.iml
+.idea/
+
+test-report/
+test-output/
+/bin/

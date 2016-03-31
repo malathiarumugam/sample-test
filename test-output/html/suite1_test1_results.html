@@ -3,16 +3,16 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - HelloWorld</title>
+  <title>Test Results Report - Welcome</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>HelloWorld</h1>
+<h1>Welcome</h1>
 <p>
-  Test duration: 0.090s
+  Test duration: 0.010s
 </p>
 
 
@@ -30,20 +30,22 @@
                   getTest
       </td>
   <td class="duration">
-    0.090s
+    0.010s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"localhost", "bluemeric/helloworld"</span><br />
+          <i>Method arguments: </i><span class="arguments">"localhost", "bluemeric/welcome", "welcome.txt", "welcome"</span><br />
     
             <div class="testOutput">
                         <br/>
 <br/>
-Get path : http://localhost:8080/sampleapp/bluemeric/helloworld<br />
+Get path : http://localhost:8080/sampleapp/bluemeric/welcome<br />
                                 <br/>
- Status code received : 200<br />
+ Response code received : 200<br />
                                 <br/>
-Resonse : Hello World<br />
+Response String received : Welcome to Bluemeric.<br />
+                                <br/>
+Both response code and string are matching with expected output. Hence Passed the test.<br />
                   </div>
     
 

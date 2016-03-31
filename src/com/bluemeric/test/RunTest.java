@@ -31,12 +31,12 @@ public class RunTest  implements ITestListener {
 
 	private void runTests(TestNG tng) throws JAXBException, IOException {
 
-		String[] directories = Util.readDirectories(projectHome + "config");
+		String[] directories = Util.readDirectories(projectHome + "/config");
 		for ( int dir = 0; dir < directories.length; dir++){
 			XmlSuite suite = new XmlSuite();
 			ArrayList<XmlTest> tests = new ArrayList<XmlTest>();	
 
-			TestApp tstApp = (TestApp) com.bluemeric.common.GenericClass.unmarshallClass(projectHome + "config/" + directories[dir] + "/" + directories[dir] + ".xml", TestApp.class);
+			TestApp tstApp = (TestApp) com.bluemeric.common.GenericClass.unmarshallClass(projectHome + "/config/" + directories[dir] + "/" + directories[dir] + ".xml", TestApp.class);
 			System.out.println(tstApp.getName());
 			suite.setName(tstApp.getName());
 
@@ -61,6 +61,8 @@ public class RunTest  implements ITestListener {
 
 			parameters.put("endpoint", endpoint); 
 			parameters.put("url", tstApp.getQueryParam()[i].getUrl());
+			parameters.put("outputFile", tstApp.getQueryParam()[i].getOutputFile());
+			parameters.put("suiteName", suite.getName().toLowerCase());
 			test.setParameters(parameters);
 			List<XmlClass> classes = new ArrayList<XmlClass>();
 

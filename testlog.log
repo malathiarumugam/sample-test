@@ -13631,3 +13631,819 @@ java.net.ConnectException: Connection refused: connect
 2016-03-21 21:16:09,199 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
 2016-03-21 21:16:09,199 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
 2016-03-21 21:16:09,199 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:52:49,584 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:52:49,604 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-30 22:52:49,604 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:52:49,614 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:52:49,614 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:52:49,614 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:52:49,624 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:52:49,624 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:52:49,624 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:52:49,624 - httpclient.wire.header - DEBUG - << "Content-Length: 11[\r][\n]"
+2016-03-30 22:52:49,624 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:22:49 GMT[\r][\n]"
+2016-03-30 22:52:49,624 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:52:49,624 - httpclient.wire.content - DEBUG - << "Hello World"
+2016-03-30 22:52:49,624 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:52:49,624 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:52:49,624 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:52:49,624 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:52:49,654 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:52:49,654 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-30 22:52:49,654 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:52:49,654 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:52:49,654 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:52:49,654 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:52:49,664 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:52:49,664 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:52:49,664 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:52:49,664 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-30 22:52:49,664 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:22:49 GMT[\r][\n]"
+2016-03-30 22:52:49,664 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:52:49,664 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-30 22:52:49,664 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:52:49,664 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:52:49,664 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:52:49,664 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:52:49,674 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:52:49,674 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-30 22:52:49,674 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:52:49,674 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:52:49,674 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:52:49,674 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:52:49,674 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:52:49,674 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:52:49,674 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:52:49,674 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-30 22:52:49,674 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:22:49 GMT[\r][\n]"
+2016-03-30 22:52:49,674 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:52:49,674 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-30 22:52:49,674 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:52:49,674 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:52:49,674 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:52:49,674 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:53:39,595 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:53:39,615 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-30 22:53:39,615 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:53:39,625 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:53:39,625 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:53:39,625 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:53:39,625 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:53:39,625 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:53:39,635 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:53:39,635 - httpclient.wire.header - DEBUG - << "Content-Length: 11[\r][\n]"
+2016-03-30 22:53:39,635 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:23:39 GMT[\r][\n]"
+2016-03-30 22:53:39,635 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:53:39,635 - httpclient.wire.content - DEBUG - << "Hello World"
+2016-03-30 22:53:39,635 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:53:39,635 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:53:39,635 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:53:39,635 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:53:39,655 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:53:39,655 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-30 22:53:39,655 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:53:39,655 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:53:39,655 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:53:39,655 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:53:39,665 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:53:39,665 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:53:39,665 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:53:39,665 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-30 22:53:39,665 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:23:39 GMT[\r][\n]"
+2016-03-30 22:53:39,665 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:53:39,665 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-30 22:53:39,665 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:53:39,665 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:53:39,665 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:53:39,665 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:53:39,675 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:53:39,675 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-30 22:53:39,675 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:53:39,675 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:53:39,675 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:53:39,675 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:53:39,675 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:53:39,675 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:53:39,675 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:53:39,675 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-30 22:53:39,675 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:23:39 GMT[\r][\n]"
+2016-03-30 22:53:39,675 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:53:39,675 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-30 22:53:39,675 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:53:39,675 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:53:39,675 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:53:39,675 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:54:37,981 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:54:38,001 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-30 22:54:38,001 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:54:38,021 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:54:38,021 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:54:38,021 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:54:38,021 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:54:38,021 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:54:38,021 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:54:38,021 - httpclient.wire.header - DEBUG - << "Content-Length: 11[\r][\n]"
+2016-03-30 22:54:38,021 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:24:38 GMT[\r][\n]"
+2016-03-30 22:54:38,021 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:54:38,021 - httpclient.wire.content - DEBUG - << "Hello World"
+2016-03-30 22:54:38,021 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:54:38,021 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:54:38,021 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:54:38,031 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:54:38,071 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:54:38,071 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-30 22:54:38,071 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:54:38,071 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:54:38,071 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:54:38,071 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:54:38,081 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:54:38,081 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:54:38,081 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:54:38,081 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-30 22:54:38,081 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:24:38 GMT[\r][\n]"
+2016-03-30 22:54:38,081 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:54:38,081 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-30 22:54:38,081 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:54:38,081 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:54:38,081 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:54:38,081 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:54:38,091 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:54:38,091 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-30 22:54:38,091 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:54:38,091 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:54:38,091 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:54:38,091 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:54:38,091 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:54:38,091 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:54:38,091 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:54:38,091 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-30 22:54:38,091 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:24:38 GMT[\r][\n]"
+2016-03-30 22:54:38,091 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:54:38,091 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-30 22:54:38,091 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:54:38,091 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:54:38,091 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:54:38,091 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:55:31,910 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:55:31,930 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-30 22:55:31,930 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:55:31,940 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:55:31,940 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:55:31,940 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:55:31,940 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:55:31,940 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:55:31,940 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:55:31,940 - httpclient.wire.header - DEBUG - << "Content-Length: 11[\r][\n]"
+2016-03-30 22:55:31,940 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:25:31 GMT[\r][\n]"
+2016-03-30 22:55:31,950 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:55:31,950 - httpclient.wire.content - DEBUG - << "Hello World"
+2016-03-30 22:55:31,950 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:55:31,950 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:55:31,950 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:55:31,950 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:55:31,970 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:55:31,970 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-30 22:55:31,970 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:55:31,970 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:55:31,970 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:55:31,970 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:55:31,984 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:55:31,984 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:55:31,984 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:55:31,984 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-30 22:55:31,984 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:25:31 GMT[\r][\n]"
+2016-03-30 22:55:31,985 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:55:31,985 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-30 22:55:31,985 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:55:31,985 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:55:31,985 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:55:31,985 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:55:31,988 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:55:31,988 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-30 22:55:31,988 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:55:31,988 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:55:31,988 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:55:31,988 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:55:31,988 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:55:31,988 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:55:31,988 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:55:31,988 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-30 22:55:31,988 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:25:31 GMT[\r][\n]"
+2016-03-30 22:55:31,988 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:55:31,988 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-30 22:55:31,988 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:55:31,988 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:55:31,988 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:55:31,988 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:57:59,916 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:57:59,936 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-30 22:57:59,936 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:57:59,936 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:57:59,936 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:57:59,936 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:57:59,946 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:57:59,946 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:57:59,946 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:57:59,946 - httpclient.wire.header - DEBUG - << "Content-Length: 11[\r][\n]"
+2016-03-30 22:57:59,946 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:27:59 GMT[\r][\n]"
+2016-03-30 22:57:59,946 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:57:59,946 - httpclient.wire.content - DEBUG - << "Hello World"
+2016-03-30 22:57:59,946 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:57:59,946 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:57:59,946 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:57:59,946 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:58:00,032 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:58:00,032 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-30 22:58:00,032 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:58:00,032 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:58:00,032 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:58:00,032 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:58:00,042 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:58:00,042 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:58:00,042 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:58:00,042 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-30 22:58:00,042 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:27:59 GMT[\r][\n]"
+2016-03-30 22:58:00,042 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:58:00,042 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-30 22:58:00,042 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:58:00,042 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:58:00,042 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:58:00,042 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:58:00,052 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:58:00,052 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-30 22:58:00,052 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:58:00,052 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:58:00,052 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:58:00,052 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:58:00,052 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:58:00,052 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:58:00,052 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:58:00,052 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-30 22:58:00,052 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:27:59 GMT[\r][\n]"
+2016-03-30 22:58:00,052 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:58:00,052 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-30 22:58:00,052 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:58:00,052 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:58:00,052 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:58:00,052 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:58:47,805 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:58:47,825 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-30 22:58:47,825 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:58:47,835 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:58:47,835 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:58:47,835 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:58:47,845 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:58:47,845 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:58:47,845 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:58:47,845 - httpclient.wire.header - DEBUG - << "Content-Length: 11[\r][\n]"
+2016-03-30 22:58:47,845 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:28:47 GMT[\r][\n]"
+2016-03-30 22:58:47,845 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:58:47,845 - httpclient.wire.content - DEBUG - << "Hello World"
+2016-03-30 22:58:47,845 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:58:47,845 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:58:47,845 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:58:47,845 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:58:47,872 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:58:47,872 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-30 22:58:47,872 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:58:47,872 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:58:47,872 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:58:47,872 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:58:47,882 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:58:47,882 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:58:47,882 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:58:47,882 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-30 22:58:47,882 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:28:47 GMT[\r][\n]"
+2016-03-30 22:58:47,882 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:58:47,882 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-30 22:58:47,882 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:58:47,882 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:58:47,882 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:58:47,882 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 22:58:47,892 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 22:58:47,892 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-30 22:58:47,892 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 22:58:47,892 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 22:58:47,892 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 22:58:47,892 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 22:58:47,902 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 22:58:47,902 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 22:58:47,902 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 22:58:47,902 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-30 22:58:47,902 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:28:47 GMT[\r][\n]"
+2016-03-30 22:58:47,902 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 22:58:47,902 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-30 22:58:47,902 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 22:58:47,902 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 22:58:47,902 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 22:58:47,902 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 23:00:59,547 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 23:00:59,567 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-30 23:00:59,567 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 23:00:59,577 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 23:00:59,577 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 23:00:59,577 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 23:00:59,587 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 23:00:59,587 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 23:00:59,587 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 23:00:59,587 - httpclient.wire.header - DEBUG - << "Content-Length: 11[\r][\n]"
+2016-03-30 23:00:59,587 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:30:59 GMT[\r][\n]"
+2016-03-30 23:00:59,587 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 23:00:59,587 - httpclient.wire.content - DEBUG - << "Hello World"
+2016-03-30 23:00:59,587 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 23:00:59,587 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 23:00:59,587 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 23:00:59,587 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 23:00:59,617 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 23:00:59,617 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-30 23:00:59,617 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 23:00:59,617 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 23:00:59,617 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 23:00:59,617 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 23:00:59,627 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 23:00:59,627 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 23:00:59,627 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 23:00:59,627 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-30 23:00:59,627 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:30:59 GMT[\r][\n]"
+2016-03-30 23:00:59,627 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 23:00:59,627 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-30 23:00:59,627 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 23:00:59,627 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 23:00:59,627 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 23:00:59,627 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 23:00:59,637 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 23:00:59,637 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-30 23:00:59,637 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 23:00:59,637 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 23:00:59,637 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 23:00:59,637 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 23:00:59,637 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 23:00:59,637 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 23:00:59,637 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 23:00:59,637 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-30 23:00:59,637 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:30:59 GMT[\r][\n]"
+2016-03-30 23:00:59,637 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 23:00:59,637 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-30 23:00:59,637 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 23:00:59,637 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 23:00:59,637 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 23:00:59,637 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 23:01:48,791 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 23:01:48,811 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-30 23:01:48,811 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 23:01:48,821 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 23:01:48,821 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 23:01:48,821 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 23:01:48,841 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 23:01:48,841 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 23:01:48,841 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 23:01:48,841 - httpclient.wire.header - DEBUG - << "Content-Length: 12[\r][\n]"
+2016-03-30 23:01:48,841 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:31:48 GMT[\r][\n]"
+2016-03-30 23:01:48,851 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 23:01:48,851 - httpclient.wire.content - DEBUG - << "Hello World1"
+2016-03-30 23:01:48,851 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 23:01:48,851 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 23:01:48,851 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 23:01:48,851 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 23:01:48,881 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 23:01:48,881 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-30 23:01:48,881 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 23:01:48,881 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 23:01:48,881 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 23:01:48,881 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 23:01:48,881 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 23:01:48,881 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 23:01:48,881 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 23:01:48,881 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-30 23:01:48,881 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:31:48 GMT[\r][\n]"
+2016-03-30 23:01:48,881 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 23:01:48,881 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-30 23:01:48,881 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 23:01:48,881 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 23:01:48,881 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 23:01:48,881 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-30 23:01:48,891 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-30 23:01:48,891 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-30 23:01:48,891 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-30 23:01:48,891 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-30 23:01:48,891 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-30 23:01:48,891 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-30 23:01:48,901 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-30 23:01:48,901 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-30 23:01:48,901 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-30 23:01:48,901 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-30 23:01:48,901 - httpclient.wire.header - DEBUG - << "Date: Wed, 30 Mar 2016 17:31:48 GMT[\r][\n]"
+2016-03-30 23:01:48,901 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-30 23:01:48,901 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-30 23:01:48,901 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-30 23:01:48,901 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-30 23:01:48,901 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-30 23:01:48,901 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:12:31,324 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:12:31,344 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-31 07:12:31,344 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:12:31,354 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:12:31,354 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:12:31,354 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:12:31,354 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:12:31,354 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:12:31,354 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:12:31,354 - httpclient.wire.header - DEBUG - << "Content-Length: 12[\r][\n]"
+2016-03-31 07:12:31,354 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:42:31 GMT[\r][\n]"
+2016-03-31 07:12:31,354 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:12:31,354 - httpclient.wire.content - DEBUG - << "Hello World1"
+2016-03-31 07:12:31,354 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:12:31,354 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:12:31,354 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:12:31,354 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:12:31,404 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:12:31,404 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-31 07:12:31,404 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:12:31,404 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:12:31,404 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:12:31,404 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:12:31,404 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:12:31,404 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:12:31,404 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:12:31,404 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-31 07:12:31,404 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:42:31 GMT[\r][\n]"
+2016-03-31 07:12:31,404 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:12:31,404 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-31 07:12:31,404 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:12:31,404 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:12:31,404 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:12:31,404 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:12:31,414 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:12:31,414 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-31 07:12:31,414 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:12:31,414 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:12:31,414 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:12:31,414 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:12:31,414 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:12:31,424 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:12:31,424 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:12:31,424 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-31 07:12:31,424 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:42:31 GMT[\r][\n]"
+2016-03-31 07:12:31,424 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:12:31,424 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-31 07:12:31,424 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:12:31,424 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:12:31,424 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:12:31,424 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:17:28,183 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:17:28,203 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-31 07:17:28,203 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:17:28,213 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:17:28,213 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:17:28,213 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:17:28,223 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:17:28,223 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:17:28,223 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:17:28,223 - httpclient.wire.header - DEBUG - << "Content-Length: 12[\r][\n]"
+2016-03-31 07:17:28,223 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:47:28 GMT[\r][\n]"
+2016-03-31 07:17:28,223 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:17:28,223 - httpclient.wire.content - DEBUG - << "Hello World1"
+2016-03-31 07:17:28,223 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:17:28,223 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:17:28,223 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:17:28,223 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:17:28,263 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:17:28,263 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-31 07:17:28,263 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:17:28,263 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:17:28,263 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:17:28,263 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:17:28,263 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:17:28,263 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:17:28,263 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:17:28,263 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-31 07:17:28,263 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:47:28 GMT[\r][\n]"
+2016-03-31 07:17:28,263 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:17:28,263 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-31 07:17:28,263 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:17:28,263 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:17:28,263 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:17:28,263 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:17:28,273 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:17:28,273 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-31 07:17:28,273 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:17:28,273 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:17:28,273 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:17:28,273 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:17:28,283 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:17:28,283 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:17:28,283 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:17:28,283 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-31 07:17:28,283 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:47:28 GMT[\r][\n]"
+2016-03-31 07:17:28,283 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:17:28,283 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-31 07:17:28,283 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:17:28,283 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:17:28,283 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:17:28,283 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:27:51,705 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:27:51,735 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-31 07:27:51,735 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:27:51,745 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:27:51,745 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:27:51,745 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:27:51,755 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:27:51,755 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:27:51,755 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:27:51,755 - httpclient.wire.header - DEBUG - << "Content-Length: 12[\r][\n]"
+2016-03-31 07:27:51,755 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:57:51 GMT[\r][\n]"
+2016-03-31 07:27:51,755 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:27:51,755 - httpclient.wire.content - DEBUG - << "Hello World1"
+2016-03-31 07:27:51,755 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:27:51,755 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:27:51,755 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:27:51,755 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:27:51,822 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:27:51,823 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-31 07:27:51,823 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:27:51,823 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:27:51,823 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:27:51,824 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:27:51,834 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:27:51,834 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:27:51,834 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:27:51,834 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-31 07:27:51,834 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:57:51 GMT[\r][\n]"
+2016-03-31 07:27:51,834 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:27:51,834 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-31 07:27:51,834 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:27:51,834 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:27:51,834 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:27:51,834 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:27:51,846 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:27:51,847 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-31 07:27:51,847 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:27:51,847 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:27:51,847 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:27:51,847 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:27:51,862 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:27:51,862 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:27:51,862 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:27:51,862 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-31 07:27:51,862 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:57:51 GMT[\r][\n]"
+2016-03-31 07:27:51,862 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:27:51,862 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-31 07:27:51,862 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:27:51,863 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:27:51,863 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:27:51,863 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:28:55,907 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:28:55,927 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-31 07:28:55,927 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:28:55,937 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:28:55,937 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:28:55,937 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:28:55,937 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:28:55,937 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:28:55,937 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:28:55,937 - httpclient.wire.header - DEBUG - << "Content-Length: 12[\r][\n]"
+2016-03-31 07:28:55,937 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:58:55 GMT[\r][\n]"
+2016-03-31 07:28:55,937 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:28:55,937 - httpclient.wire.content - DEBUG - << "Hello World1"
+2016-03-31 07:28:55,947 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:28:55,947 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:28:55,947 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:28:55,947 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:28:55,987 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:28:55,987 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-31 07:28:55,987 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:28:55,987 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:28:55,987 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:28:55,987 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:28:55,997 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:28:55,997 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:28:55,997 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:28:55,997 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-31 07:28:55,997 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:58:55 GMT[\r][\n]"
+2016-03-31 07:28:55,997 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:28:55,997 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-31 07:28:55,997 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:28:55,997 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:28:55,997 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:28:55,997 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:28:55,997 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:28:55,997 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-31 07:28:56,007 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:28:56,007 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:28:56,007 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:28:56,007 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:28:56,007 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:28:56,007 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:28:56,007 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:28:56,007 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-31 07:28:56,007 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:58:55 GMT[\r][\n]"
+2016-03-31 07:28:56,007 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:28:56,007 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-31 07:28:56,007 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:28:56,007 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:28:56,007 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:28:56,007 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:29:36,928 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:29:36,948 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-31 07:29:36,948 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:29:36,958 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:29:36,958 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:29:36,958 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:29:36,958 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:29:36,958 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:29:36,958 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:29:36,958 - httpclient.wire.header - DEBUG - << "Content-Length: 12[\r][\n]"
+2016-03-31 07:29:36,958 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:59:36 GMT[\r][\n]"
+2016-03-31 07:29:36,958 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:29:36,958 - httpclient.wire.content - DEBUG - << "Hello World1"
+2016-03-31 07:29:36,958 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:29:36,958 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:29:36,958 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:29:36,968 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:29:36,998 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:29:36,998 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-31 07:29:36,998 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:29:36,998 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:29:36,998 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:29:36,998 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:29:36,998 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:29:36,998 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:29:36,998 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:29:36,998 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-31 07:29:36,998 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:59:36 GMT[\r][\n]"
+2016-03-31 07:29:36,998 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:29:36,998 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-31 07:29:36,998 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:29:36,998 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:29:36,998 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:29:36,998 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:29:37,008 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:29:37,008 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-31 07:29:37,008 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:29:37,008 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:29:37,008 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:29:37,008 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:29:37,018 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:29:37,018 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:29:37,018 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:29:37,018 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-31 07:29:37,018 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 01:59:36 GMT[\r][\n]"
+2016-03-31 07:29:37,018 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:29:37,018 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-31 07:29:37,018 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:29:37,018 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:29:37,018 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:29:37,018 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:30:10,432 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:30:10,452 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-31 07:30:10,452 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:30:10,462 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:30:10,462 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:30:10,462 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:30:10,462 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:30:10,462 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:30:10,462 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:30:10,462 - httpclient.wire.header - DEBUG - << "Content-Length: 12[\r][\n]"
+2016-03-31 07:30:10,462 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 02:00:10 GMT[\r][\n]"
+2016-03-31 07:30:10,462 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:30:10,462 - httpclient.wire.content - DEBUG - << "Hello World1"
+2016-03-31 07:30:10,472 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:30:10,472 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:30:10,472 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:30:10,472 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:30:10,502 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:30:10,502 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-31 07:30:10,502 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:30:10,502 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:30:10,502 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:30:10,502 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:30:10,523 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:30:10,523 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:30:10,524 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:30:10,524 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-31 07:30:10,524 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 02:00:10 GMT[\r][\n]"
+2016-03-31 07:30:10,524 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:30:10,524 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-31 07:30:10,524 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:30:10,524 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:30:10,524 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:30:10,524 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:30:10,534 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:30:10,535 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-31 07:30:10,535 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:30:10,535 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:30:10,535 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:30:10,536 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:30:10,538 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:30:10,538 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:30:10,538 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:30:10,538 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-31 07:30:10,538 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 02:00:10 GMT[\r][\n]"
+2016-03-31 07:30:10,538 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:30:10,538 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-31 07:30:10,538 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:30:10,538 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:30:10,538 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:30:10,538 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:30:36,361 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:30:36,391 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-31 07:30:36,391 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:30:36,401 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:30:36,401 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:30:36,401 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:30:36,401 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:30:36,411 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:30:36,411 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:30:36,411 - httpclient.wire.header - DEBUG - << "Content-Length: 12[\r][\n]"
+2016-03-31 07:30:36,411 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 02:00:36 GMT[\r][\n]"
+2016-03-31 07:30:36,411 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:30:36,411 - httpclient.wire.content - DEBUG - << "Hello World1"
+2016-03-31 07:30:36,411 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:30:36,411 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:30:36,411 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:30:36,411 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:30:36,451 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:30:36,451 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-31 07:30:36,451 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:30:36,451 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:30:36,451 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:30:36,451 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:30:36,451 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:30:36,451 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:30:36,451 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:30:36,451 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-31 07:30:36,451 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 02:00:36 GMT[\r][\n]"
+2016-03-31 07:30:36,451 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:30:36,451 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-31 07:30:36,451 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:30:36,451 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:30:36,451 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:30:36,451 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:30:36,461 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:30:36,461 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-31 07:30:36,471 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:30:36,471 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:30:36,471 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:30:36,471 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:30:36,481 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:30:36,481 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:30:36,481 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:30:36,481 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-31 07:30:36,481 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 02:00:36 GMT[\r][\n]"
+2016-03-31 07:30:36,481 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:30:36,481 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-31 07:30:36,481 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:30:36,481 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:30:36,481 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:30:36,481 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:31:49,028 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:31:49,048 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld HTTP/1.1[\r][\n]"
+2016-03-31 07:31:49,048 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:31:49,058 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:31:49,058 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:31:49,058 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:31:49,058 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:31:49,058 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:31:49,058 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:31:49,058 - httpclient.wire.header - DEBUG - << "Content-Length: 12[\r][\n]"
+2016-03-31 07:31:49,058 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 02:01:49 GMT[\r][\n]"
+2016-03-31 07:31:49,058 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:31:49,058 - httpclient.wire.content - DEBUG - << "Hello World1"
+2016-03-31 07:31:49,058 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:31:49,058 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:31:49,058 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:31:49,068 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:31:49,089 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:31:49,089 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/helloworld1?name=testing HTTP/1.1[\r][\n]"
+2016-03-31 07:31:49,089 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:31:49,089 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:31:49,089 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:31:49,089 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:31:49,099 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:31:49,099 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:31:49,099 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:31:49,099 - httpclient.wire.header - DEBUG - << "Content-Length: 19[\r][\n]"
+2016-03-31 07:31:49,099 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 02:01:49 GMT[\r][\n]"
+2016-03-31 07:31:49,099 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:31:49,099 - httpclient.wire.content - DEBUG - << "Hello World testing"
+2016-03-31 07:31:49,099 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:31:49,099 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:31:49,099 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:31:49,099 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1
+2016-03-31 07:31:49,099 - org.apache.commons.httpclient.HttpConnection - DEBUG - Open connection to localhost:8080
+2016-03-31 07:31:49,109 - httpclient.wire.header - DEBUG - >> "GET /sampleapp/bluemeric/welcome HTTP/1.1[\r][\n]"
+2016-03-31 07:31:49,109 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Adding Host request header
+2016-03-31 07:31:49,109 - httpclient.wire.header - DEBUG - >> "User-Agent: Jakarta Commons-HttpClient/3.0.1[\r][\n]"
+2016-03-31 07:31:49,109 - httpclient.wire.header - DEBUG - >> "Host: localhost:8080[\r][\n]"
+2016-03-31 07:31:49,109 - httpclient.wire.header - DEBUG - >> "[\r][\n]"
+2016-03-31 07:31:49,109 - httpclient.wire.header - DEBUG - << "HTTP/1.1 200 OK[\r][\n]"
+2016-03-31 07:31:49,109 - httpclient.wire.header - DEBUG - << "Server: Apache-Coyote/1.1[\r][\n]"
+2016-03-31 07:31:49,109 - httpclient.wire.header - DEBUG - << "Content-Type: text/plain[\r][\n]"
+2016-03-31 07:31:49,109 - httpclient.wire.header - DEBUG - << "Content-Length: 21[\r][\n]"
+2016-03-31 07:31:49,109 - httpclient.wire.header - DEBUG - << "Date: Thu, 31 Mar 2016 02:01:49 GMT[\r][\n]"
+2016-03-31 07:31:49,109 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Buffering response body
+2016-03-31 07:31:49,109 - httpclient.wire.content - DEBUG - << "Welcome to Bluemeric."
+2016-03-31 07:31:49,109 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Resorting to protocol version default close connection policy
+2016-03-31 07:31:49,109 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Should NOT close connection, using HTTP/1.1
+2016-03-31 07:31:49,109 - org.apache.commons.httpclient.HttpConnection - DEBUG - Releasing connection back to connection manager.
+2016-03-31 07:31:49,109 - org.apache.commons.httpclient.HttpMethodBase - DEBUG - Default charset used: ISO-8859-1

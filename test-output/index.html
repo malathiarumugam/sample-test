@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">2 suites, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,87 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Welcome">
+              <span class="suite-name border-passed">Welcome</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Welcome">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Welcome">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Welcome">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Welcome">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Welcome">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Welcome">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Welcome">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Welcome" class="hide-methods passed suite-Welcome"> (hide)</a> <!-- hide-methods passed suite-Welcome -->
+                      <a href="#" panel-name="suite-Welcome" class="show-methods passed suite-Welcome"> (show)</a> <!-- show-methods passed suite-Welcome -->
+                    </span>
+                    <div class="method-list-content passed suite-Welcome">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Welcome" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(localhost, bluemeric/welcome, welcome.txt, welcome)">getTest(localhost, bluemeric/welcome, welcome.txt, welcome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Welcome -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-HelloWorld">
-              <span class="suite-name border-passed">HelloWorld</span>
+              <span class="suite-name border-failed">HelloWorld</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +132,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-HelloWorld">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +169,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-HelloWorld" class="hide-methods failed suite-HelloWorld"> (hide)</a> <!-- hide-methods failed suite-HelloWorld -->
+                      <a href="#" panel-name="suite-HelloWorld" class="show-methods failed suite-HelloWorld"> (show)</a> <!-- show-methods failed suite-HelloWorld -->
+                    </span>
+                    <div class="method-list-content failed suite-HelloWorld">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HelloWorld" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(localhost, bluemeric/helloworld, helloworld.txt, helloworld)">getTest(localhost, bluemeric/helloworld, helloworld.txt, helloworld)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-HelloWorld -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,22 +194,7 @@
                     <div class="method-list-content passed suite-HelloWorld">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-HelloWorld" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(localhost, bluemeric/helloworld)">getTest(localhost, bluemeric/helloworld)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-HelloWorld" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(localhost, bluemeric/helloworld0)">getTest(localhost, bluemeric/helloworld0)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-HelloWorld" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(localhost, bluemeric/helloworld1)">getTest(localhost, bluemeric/helloworld1)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-HelloWorld" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(localhost, bluemeric/helloworld2?name=Demo)">getTest(localhost, bluemeric/helloworld2?name=Demo)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-HelloWorld" title="com.bluemeric.test.GenerateTest" hash-for-method="getTest(localhost, bluemeric/helloworld1?name=testing, helloworld1.txt, helloworld)">getTest(localhost, bluemeric/helloworld1?name=testing, helloworld1.txt, helloworld)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-HelloWorld -->
@@ -130,7 +208,43 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
+        <div panel-name="suite-Welcome" class="panel Welcome">
+          <div class="suite-Welcome-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bluemeric.test.GenerateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(localhost, bluemeric/welcome, welcome.txt, welcome)">
+                  </a> <!-- getTest(localhost, bluemeric/welcome, welcome.txt, welcome) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(localhost, bluemeric/welcome, welcome.txt, welcome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Welcome-class-passed -->
+        </div> <!-- panel Welcome -->
         <div panel-name="suite-HelloWorld" class="panel HelloWorld">
+          <div class="suite-HelloWorld-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.bluemeric.test.GenerateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTest(localhost, bluemeric/helloworld, helloworld.txt, helloworld)">
+                  </a> <!-- getTest(localhost, bluemeric/helloworld, helloworld.txt, helloworld) -->
+                  <span class="method-name">getTest</span>
+                  <span class="parameters">(localhost, bluemeric/helloworld, helloworld.txt, helloworld)</span>
+                  <div class="stack-trace"><b>"Expected response is Hello World. But received reponse = Hello World1. Output mismatching. Hence failing the test."</b><br>org.testng.Assert.fail(Assert.java:89)<br>com.bluemeric.test.GenerateTest.getTest(GenerateTest.java:53)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br>java.lang.reflect.Method.invoke(Unknown Source)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:702)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:894)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1219)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:768)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1188)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1113)<br>org.testng.TestNG.run(TestNG.java:1025)<br>com.bluemeric.test.RunTest.runTests(RunTest.java:50)<br>com.bluemeric.test.RunTest.main(RunTest.java:86)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HelloWorld-class-failed -->
           <div class="suite-HelloWorld-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -139,39 +253,41 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getTest(localhost, bluemeric/helloworld)">
-                  </a> <!-- getTest(localhost, bluemeric/helloworld) -->
+                  <a name="getTest(localhost, bluemeric/helloworld1?name=testing, helloworld1.txt, helloworld)">
+                  </a> <!-- getTest(localhost, bluemeric/helloworld1?name=testing, helloworld1.txt, helloworld) -->
                   <span class="method-name">getTest</span>
-                  <span class="parameters">(localhost, bluemeric/helloworld)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getTest(localhost, bluemeric/helloworld0)">
-                  </a> <!-- getTest(localhost, bluemeric/helloworld0) -->
-                  <span class="method-name">getTest</span>
-                  <span class="parameters">(localhost, bluemeric/helloworld0)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getTest(localhost, bluemeric/helloworld1)">
-                  </a> <!-- getTest(localhost, bluemeric/helloworld1) -->
-                  <span class="method-name">getTest</span>
-                  <span class="parameters">(localhost, bluemeric/helloworld1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getTest(localhost, bluemeric/helloworld2?name=Demo)">
-                  </a> <!-- getTest(localhost, bluemeric/helloworld2?name=Demo) -->
-                  <span class="method-name">getTest</span>
-                  <span class="parameters">(localhost, bluemeric/helloworld2?name=Demo)</span>
+                  <span class="parameters">(localhost, bluemeric/helloworld1?name=testing, helloworld1.txt, helloworld)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-HelloWorld-class-passed -->
         </div> <!-- panel HelloWorld -->
+        <div panel-name="test-xml-Welcome" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Welcome&quot;&gt;
+  &lt;test name=&quot;Welcome&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;welcome.txt&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;welcome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;bluemeric/welcome&quot;/&gt;
+    &lt;parameter name=&quot;endpoint&quot; value=&quot;localhost&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;get&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Welcome --&gt;
+&lt;/suite&gt; &lt;!-- Welcome --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
         <div panel-name="test-xml-HelloWorld" class="panel">
           <div class="main-panel-header rounded-window-top">
           </div> <!-- main-panel-header rounded-window-top -->
@@ -181,6 +297,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;HelloWorld&quot;&gt;
   &lt;test name=&quot;HelloWorld&quot; preserve-order=&quot;true&quot;&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;helloworld.txt&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;helloworld&quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;bluemeric/helloworld&quot;/&gt;
     &lt;parameter name=&quot;endpoint&quot; value=&quot;localhost&quot;/&gt;
     &lt;groups&gt;
@@ -192,20 +310,10 @@
       &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- HelloWorld --&gt;
-  &lt;test name=&quot;HelloWorld0&quot; preserve-order=&quot;true&quot;&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;bluemeric/helloworld0&quot;/&gt;
-    &lt;parameter name=&quot;endpoint&quot; value=&quot;localhost&quot;/&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;get&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- HelloWorld0 --&gt;
   &lt;test name=&quot;HelloWorld1&quot; preserve-order=&quot;true&quot;&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;bluemeric/helloworld1&quot;/&gt;
+    &lt;parameter name=&quot;outputFile&quot; value=&quot;helloworld1.txt&quot;/&gt;
+    &lt;parameter name=&quot;suiteName&quot; value=&quot;helloworld&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;bluemeric/helloworld1?name=testing&quot;/&gt;
     &lt;parameter name=&quot;endpoint&quot; value=&quot;localhost&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
@@ -216,20 +324,20 @@
       &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- HelloWorld1 --&gt;
-  &lt;test name=&quot;HelloWorld2&quot; preserve-order=&quot;true&quot;&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;bluemeric/helloworld2?name=Demo&quot;/&gt;
-    &lt;parameter name=&quot;endpoint&quot; value=&quot;localhost&quot;/&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;get&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.bluemeric.test.GenerateTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- HelloWorld2 --&gt;
 &lt;/suite&gt; &lt;!-- HelloWorld --&gt;
             </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Welcome" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Welcome</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Welcome (1 class)</span>
+              </li>
+            </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="testlist-HelloWorld" class="panel">
@@ -242,15 +350,24 @@
                 <span class="test-name">HelloWorld (1 class)</span>
               </li>
               <li>
-                <span class="test-name">HelloWorld0 (1 class)</span>
-              </li>
-              <li>
                 <span class="test-name">HelloWorld1 (1 class)</span>
               </li>
-              <li>
-                <span class="test-name">HelloWorld2 (1 class)</span>
-              </li>
             </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Welcome" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Welcome</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">get</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="group-HelloWorld" class="panel">
@@ -268,6 +385,35 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
+        <div panel-name="times-Welcome" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Welcome</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Welcome');
+function tableData_Welcome() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getTest')
+data.setCell(0, 2, 'com.bluemeric.test.GenerateTest')
+data.setCell(0, 3, 10);
+window.suiteTableData['Welcome']= { tableData: data, tableDiv: 'times-div-Welcome'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 ms</span>
+              <div id="times-div-Welcome">
+              </div> <!-- times-div-Welcome -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
         <div panel-name="times-HelloWorld" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Times for HelloWorld</span>
@@ -282,7 +428,7 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getTest')
 data.setCell(0, 2, 'com.bluemeric.test.GenerateTest')
@@ -290,23 +436,36 @@ data.setCell(0, 3, 90);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getTest')
 data.setCell(1, 2, 'com.bluemeric.test.GenerateTest')
-data.setCell(1, 3, 8);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getTest')
-data.setCell(2, 2, 'com.bluemeric.test.GenerateTest')
-data.setCell(2, 3, 7);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getTest')
-data.setCell(3, 2, 'com.bluemeric.test.GenerateTest')
-data.setCell(3, 3, 7);
+data.setCell(1, 3, 10);
 window.suiteTableData['HelloWorld']= { tableData: data, tableDiv: 'times-div-HelloWorld'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 112 ms</span>
+              <span class="suite-total-time">Total running time: 100 ms</span>
               <div id="times-div-HelloWorld">
               </div> <!-- times-div-HelloWorld -->
             </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Welcome" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Welcome</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getTest(localhost, bluemeric/welcome, welcome.txt, welcome)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">
+
+Get path : http://localhost:8080/sampleapp/bluemeric/welcome</span>
+                <span class="reporter-method-output">
+ Response code received : 200</span>
+                <span class="reporter-method-output">
+Response String received : Welcome to Bluemeric.</span>
+                <span class="reporter-method-output">
+Both response code and string are matching with expected output. Hence Passed the test.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="reporter-HelloWorld" class="panel">
@@ -315,55 +474,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">getTest(localhost, bluemeric/helloworld)</span>
+              <span class="reporter-method-name">getTest(localhost, bluemeric/helloworld, helloworld.txt, helloworld)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">
 
 Get path : http://localhost:8080/sampleapp/bluemeric/helloworld</span>
                 <span class="reporter-method-output">
- Status code received : 200</span>
+ Response code received : 200</span>
                 <span class="reporter-method-output">
-Resonse : Hello World</span>
+Response String received : Hello World1</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">getTest(localhost, bluemeric/helloworld0)</span>
+              <span class="reporter-method-name">getTest(localhost, bluemeric/helloworld1?name=testing, helloworld1.txt, helloworld)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">
 
-Get path : http://localhost:8080/sampleapp/bluemeric/helloworld0</span>
+Get path : http://localhost:8080/sampleapp/bluemeric/helloworld1?name=testing</span>
                 <span class="reporter-method-output">
- Status code received : 200</span>
+ Response code received : 200</span>
                 <span class="reporter-method-output">
-Resonse : <?xml version="1.0"?><hello> Hello World</hello></span>
+Response String received : Hello World testing</span>
+                <span class="reporter-method-output">
+Both response code and string are matching with expected output. Hence Passed the test.</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">getTest(localhost, bluemeric/helloworld1)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">
-
-Get path : http://localhost:8080/sampleapp/bluemeric/helloworld1</span>
-                <span class="reporter-method-output">
- Status code received : 200</span>
-                <span class="reporter-method-output">
-Resonse : <html> <title>Hello World</title><body><h1>Hello World! Welcome to Bluemeric Demo!</body></h1></html> </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">getTest(localhost, bluemeric/helloworld2?name=Demo)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">
-
-Get path : http://localhost:8080/sampleapp/bluemeric/helloworld2?name=Demo</span>
-                <span class="reporter-method-output">
- Status code received : 200</span>
-                <span class="reporter-method-output">
-Resonse : Hello World Demo</span>
-                <span class="reporter-method-output">
-Passed Query Parameter = Demo. Received Prameter = Demo</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Welcome" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-HelloWorld" class="panel">
@@ -371,6 +513,29 @@ Passed Query Parameter = Demo. Received Prameter = Demo</span>
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Welcome" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bluemeric.test.GenerateTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(localhost, bluemeric/helloworld, helloworld.txt, helloworld)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTest(localhost, bluemeric/helloworld1?name=testing, helloworld1.txt, helloworld)</span>
+                <span class="method-start">111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTest(localhost, bluemeric/welcome, welcome.txt, welcome)</span>
+                <span class="method-start">121 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-HelloWorld" class="panel">
@@ -381,20 +546,18 @@ Passed Query Parameter = Demo. Received Prameter = Demo</span>
             <div class="chronological-class">
               <div class="chronological-class-name">com.bluemeric.test.GenerateTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">getTest(localhost, bluemeric/helloworld)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest(localhost, bluemeric/helloworld, helloworld.txt, helloworld)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getTest(localhost, bluemeric/helloworld0)</span>
-                <span class="method-start">113 ms</span>
+                <span class="method-name">getTest(localhost, bluemeric/helloworld1?name=testing, helloworld1.txt, helloworld)</span>
+                <span class="method-start">111 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getTest(localhost, bluemeric/helloworld1)</span>
-                <span class="method-start">127 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">getTest(localhost, bluemeric/helloworld2?name=Demo)</span>
-                <span class="method-start">141 ms</span>
+                <span class="method-name">getTest(localhost, bluemeric/welcome, welcome.txt, welcome)</span>
+                <span class="method-start">121 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

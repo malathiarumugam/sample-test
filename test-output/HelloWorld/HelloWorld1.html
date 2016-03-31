@@ -57,7 +57,7 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 21 21:16:09 IST 2016</td>
+<td>Started on:</td><td>Thu Mar 31 07:31:49 IST 2016</td>
 </tr>
 <tr><td>Total time:</td><td>0 seconds (10 ms)</td>
 </tr><tr>
@@ -75,23 +75,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bluemeric.test.GenerateTest.getTest()'><b>getTest</b><br>Test class: com.bluemeric.test.GenerateTest<br>Parameters: localhost, bluemeric/helloworld1<br/>
-<a href="#Output-5140220" onClick='toggleBox("Output-5140220", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.bluemeric.test.GenerateTest.getTest()'><b>getTest</b><br>Test class: com.bluemeric.test.GenerateTest<br>Parameters: localhost, bluemeric/helloworld1?name=testing, helloworld1.txt, helloworld<br/>
+<a href="#Output-8128224" onClick='toggleBox("Output-8128224", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-5140220" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-5140220">
+<a href="#Output-8128224" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8128224">
 
 
-Get path : http://localhost:8080/sampleapp/bluemeric/helloworld1<br/>
+Get path : http://localhost:8080/sampleapp/bluemeric/helloworld1?name=testing<br/>
 
- Status code received : 200<br/>
+ Response code received : 200<br/>
 
-Resonse : <html> <title>Hello World</title><body><h1>Hello World! Welcome to Bluemeric Demo!</body></h1></html> <br/>
+Response String received : Hello World testing<br/>
+
+Both response code and string are matching with expected output. Hence Passed the test.<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>com.bluemeric.test.GenerateTest@135cda0</td></tr>
+<td>com.bluemeric.test.GenerateTest@49f120</td></tr>
 </table><p>
 </body>
 </html>
