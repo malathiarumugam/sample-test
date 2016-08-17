@@ -4,7 +4,7 @@
 	<property name="build-dir" location="bin"/>
 	<property name="classes-dir" value="${build-dir}"/>
 	<property name="dist-dir" location="dist"/>
-	<property name="lib-dir" value="lib"/>
+	<property name="lib-dir" value="jar_files"/>
 	<property name="jar-dir" value="${build-dir}/jar"/>
 	<property name="main-class" value="sai.Suite"/>
 	<target name="clean">
@@ -15,7 +15,7 @@
 		<javac srcdir="src" destdir="bin" classpathref="classes" />
 	</target>
 	<path id="classes">
-		<fileset dir="lib">
+		<fileset dir="jar_files">
 			<include name="**/*.jar" />
 		</fileset>
 	</path>
