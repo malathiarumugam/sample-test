@@ -29,9 +29,9 @@
 			</classpath>
 		</java>
 	</target>
-	<target name="jar">
+	<target name="jar" depends="compile">
 		<mkdir dir="bin/jar"/>
-		<jar destfile="bin/jar/HelloWorld.jar" basedir="bin/classes">
+		<jar destfile="bin/jar/HelloWorld.jar" basedir="bin">
 			<manifest>
 				<attribute name="Main-Class" value="com.bluemeric.test.RunTest"/>
 			</manifest>
