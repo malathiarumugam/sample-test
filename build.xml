@@ -22,6 +22,7 @@
 	</path>
 	<target name="runTest" depends="compile">
 		<java classname="com.bluemeric.test.RunTest" fork="true">
+			<echo message="${env.APP_ENDPOINT}" />
 			<sysproperty key="PROJECT_HOME" value="${PROJECT_HOME}" />
 			<sysproperty key="APP_ENDPOINT" value="${env.APP_ENDPOINT}" />
 			<classpath>
