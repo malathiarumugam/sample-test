@@ -7,6 +7,7 @@
 	<property name="lib-dir" value="jar_files"/>
 	<property name="jar-dir" value="${build-dir}/jar"/>
 	<property name="main-class" value="sai.Suite"/>
+	<property environment="env" />
 	<target name="clean">
 		<delete dir="bin"/>
 	</target>
@@ -22,7 +23,7 @@
 	<target name="runTest" depends="compile">
 		<java classname="com.bluemeric.test.RunTest" fork="true">
 			<sysproperty key="PROJECT_HOME" value="${PROJECT_HOME}" />
-			<sysproperty key="APP_ENDPOINT" value="${APP_ENDPOINT}" />
+			<sysproperty key="APP_ENDPOINT" value="${env.APP_ENDPOINT}" />
 			<classpath>
 				<pathelement location="bin" />
 				<path refid="classes" />
