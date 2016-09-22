@@ -49,7 +49,7 @@ public class GenerateTest extends TestNG {
 		String content = new Scanner(new File(outputFile)).useDelimiter("\\Z").next();
 		System.out.println("Expected Reponse : " + content);
 		String temp = con.responseString;
-		if (!temp.equals(content))
+		if (!temp.contains(content))
 			Assert.fail("Expected response is " + content + ". But received reponse = " + temp + ". Output mismatching. Hence failing the test.");
 
 		Reporter.log("\nBoth response code and string are matching with expected output. Hence Passed the test.");
