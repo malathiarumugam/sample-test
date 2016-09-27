@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Python Flask App
+=======
+Python Flask App
+>>>>>>> origin/master

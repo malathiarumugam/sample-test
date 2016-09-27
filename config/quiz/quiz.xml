@@ -2,6 +2,7 @@
 
 <TestApp name="quiz">
 	
-<queryParam name="Welcome" url="/polls" outputFile="quiz.txt"  />
+<queryParam name="Welcome" url="/" outputFile="quiz.txt"  />
+<queryParam name="Signup" url="/" outputFile="signup.txt"  />
 
 </TestApp>
