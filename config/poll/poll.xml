@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TestApp name="Welcome">
+	
+<queryParam name="Welcome" url="/polls" outputFile="poll.txt"  />
+
+<queryParam name="View polls" url="/polls" outputFile="viewpoll.txt"  />
+<queryParam name="Create polls" url="/polls/create" outputFile="createpoll.txt"  />
+</TestApp>
