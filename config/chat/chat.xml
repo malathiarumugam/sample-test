@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TestApp name="chat">
+	
+<queryParam name="Welcome" url="/index.html" outputFile="chat.txt"  />
+
+<queryParam name="chatroom" url="/chat.html?name=&room=" outputFile="chatroom.txt"  />
+
+</TestApp>
