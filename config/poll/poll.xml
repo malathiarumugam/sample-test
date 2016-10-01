@@ -2,8 +2,8 @@
 
 <TestApp name="poll">
 	
-<queryParam name="Welcome" url="/polls" outputFile="poll.txt"  />
+<queryParam name="Welcome" url="polls" outputFile="poll.txt"  />
 
-<queryParam name="View polls" url="/polls" outputFile="viewpoll.txt"  />
-<queryParam name="Create polls" url="/polls/create" outputFile="createpoll.txt"  />
+<queryParam name="View polls" url="polls" outputFile="viewpoll.txt"  />
+<queryParam name="Create polls" url="polls/create" outputFile="createpoll.txt"  />
 </TestApp>
