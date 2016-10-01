@@ -4,6 +4,6 @@
 	
 <queryParam name="Welcome" url="/index.html" outputFile="chat.txt"  />
 
-<queryParam name="chatroom" url="/chat.html?name=&room=" outputFile="chatroom.txt"  />
+<queryParam name="chatroom" url="/chat.html?name=&#38;room=" outputFile="chatroom.txt"  />
 
 </TestApp>
