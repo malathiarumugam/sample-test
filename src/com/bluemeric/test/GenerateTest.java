@@ -35,7 +35,7 @@ public class GenerateTest extends TestNG {
 	@Test(groups = { "get" })
 	public void getTest(@Optional String endpoint, @Optional String uri, @Optional String outputFile, @Optional String suiteName) throws Exception {
 
-		String url = "http://" + endpoint + ":8080/sampleapp/" +  uri ;
+		String url = "http://" + endpoint + "/" +  uri ;
 		int resCode = con.get(url);
 
 		Reporter.log("\n\nGet path : " + url);
